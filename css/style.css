@@ -1,0 +1,147 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,700);
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+
+h3 {
+  display: block;
+  width: 90vw;
+  margin: 0;
+  padding: 60px 50px 20px 50px; }
+
+.section {
+  margin: auto; }
+
+.logo {
+  text-transform: lowercase;
+  text-decoration: none;
+  text-align: center; }
+  .logo .mahon {
+    font-weight: 100; }
+  .logo .baldwin {
+    font-weight: 700; }
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: fixed;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 10px 0 10px 0;
+  z-index: 100;
+  background-color: rgba(56, 180, 232, 0.5); }
+  @media (min-width: 500px) {
+    .navigation {
+      font-size: 16pt; } }
+  .navigation a {
+    color: #fff;
+    text-decoration: none;
+    flex-grow: 1;
+    flex-basis: auto;
+    text-align: center; }
+
+.intro.section {
+  min-height: 100vh;
+  background: #38B4E8;
+  color: #fff;
+  top: 0; }
+  .intro.section a {
+    color: #fff; }
+  .intro.section .intro-text {
+    text-align: justify; }
+    @media (min-width: 500px) {
+      .intro.section .intro-text {
+        width: 70vw;
+        max-height: 70vw;
+        overflow-y: auto;
+        position: absolute;
+        right: 10vh;
+        bottom: 10vh; } }
+    @media (max-width: 500px) {
+      .intro.section .intro-text {
+        padding: 5vw;
+        padding-top: 10vw;
+        margin: 0;
+        right: 5vw;
+        left: 5vw; } }
+
+.skills.section .items {
+  width: 75vw;
+  max-width: 1500px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .skills.section .items div.skill {
+    padding: 20px;
+    width: 15vw;
+    height: 15vw;
+    max-width: 300px;
+    max-height: 300px; }
+    .skills.section .items div.skill img {
+      width: 15vw;
+      height: 15vw;
+      max-width: 300px;
+      max-height: 300px;
+      margin: auto; }
+      @media (max-width: 500px) {
+        .skills.section .items div.skill img {
+          width: 50px;
+          height: 50px; } }
+
+.portfolio.section {
+  background: #000;
+  color: #fff; }
+  .portfolio.section .items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll; }
+    .portfolio.section .items .portfolio-item {
+      margin: 30px; }
+      .portfolio.section .items .portfolio-item a {
+        color: #fff; }
+      .portfolio.section .items .portfolio-item img {
+        max-height: 50vh;
+        margin: 30px; }
+
+.contact.section {
+  min-height: 100vh; }
+  .contact.section .content {
+    max-width: 960px;
+    margin: auto; }
+    @media (max-width: 500px) {
+      .contact.section .content {
+        padding: 5vw; } }
+  .contact.section a {
+    color: #38B4E8; }
+
+.hidden {
+  display: none; }
+
+.full-list {
+  text-align: center; }
+  .full-list button {
+    margin-bottom: 10px;
+    background-color: transparent;
+    border-color: #aadff5;
+    border-style: solid;
+    border-width: 1px;
+    color: #38B4E8;
+    border-radius: 3px; }
+  .full-list .skill-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .full-list .skill-list li {
+      padding: 10px 10px 0 10px;
+      flex-grow: 1;
+      flex-basis: auto; }
+
+/*# sourceMappingURL=style.css.map */
