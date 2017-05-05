@@ -53,15 +53,21 @@ h3 {
   .intro.section a {
     color: #fff; }
   .intro.section .intro-text {
-    text-align: justify; }
+    text-align: justify;
+    animation: fadein 1s; }
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
     @media (min-width: 500px) {
       .intro.section .intro-text {
         width: 70vw;
         max-height: 70vw;
         overflow-y: auto;
         position: absolute;
-        right: 10vh;
-        bottom: 10vh; } }
+        left: 10vh;
+        top: 20vh; } }
     @media (max-width: 500px) {
       .intro.section .intro-text {
         padding: 5vw;
@@ -69,6 +75,19 @@ h3 {
         margin: 0;
         right: 5vw;
         left: 5vw; } }
+
+.kudos.section {
+  background-color: rgba(56, 180, 232, 0.3); }
+  .kudos.section .blurb {
+    font-size: 14pt;
+    padding: 2px 90px; }
+  .kudos.section .recommendations {
+    padding-bottom: 60px; }
+    .kudos.section .recommendations .recommendation {
+      padding: 0 100px 25px 100px; }
+      .kudos.section .recommendations .recommendation .by {
+        display: inline-block;
+        color: #666666; }
 
 .skills.section .items {
   width: 75vw;
@@ -78,7 +97,7 @@ h3 {
   flex-direction: row;
   flex-wrap: wrap; }
   .skills.section .items div.skill {
-    padding: 20px;
+    padding: 30px;
     width: 15vw;
     height: 15vw;
     max-width: 300px;
@@ -111,7 +130,8 @@ h3 {
         margin: 30px; }
 
 .contact.section {
-  min-height: 100vh; }
+  min-height: 100vh;
+  background-color: rgba(56, 180, 232, 0.3); }
   .contact.section .content {
     max-width: 960px;
     margin: auto; }
@@ -128,6 +148,7 @@ h3 {
   text-align: center; }
   .full-list button {
     margin-bottom: 10px;
+    font-size: 15pt;
     background-color: transparent;
     border-color: #aadff5;
     border-style: solid;
@@ -138,7 +159,10 @@ h3 {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 20px; }
     .full-list .skill-list li {
       padding: 10px 10px 0 10px;
       flex-grow: 1;
