@@ -77,14 +77,24 @@ h3 {
         left: 5vw; } }
 
 .kudos.section {
-  background-color: rgba(56, 180, 232, 0.3); }
+  min-height: 100vh;
+  background-color: rgba(56, 180, 0, 0.4); }
   .kudos.section .blurb {
     font-size: 14pt;
     padding: 2px 90px; }
   .kudos.section .recommendations {
-    padding-bottom: 60px; }
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
     .kudos.section .recommendations .recommendation {
-      padding: 0 100px 25px 100px; }
+      padding: 1vw 5vw; }
+      @media (min-width: 500px) {
+        .kudos.section .recommendations .recommendation {
+          width: 38vw; } }
+      @media (max-width: 500px) {
+        .kudos.section .recommendations .recommendation {
+          width: 90vw; } }
       .kudos.section .recommendations .recommendation .by {
         display: inline-block;
         color: #666666; }
