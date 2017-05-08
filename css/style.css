@@ -77,7 +77,6 @@ h3 {
         left: 5vw; } }
 
 .kudos.section {
-  min-height: 100vh;
   background-color: rgba(56, 180, 0, 0.4); }
   .kudos.section .blurb {
     font-size: 14pt;
