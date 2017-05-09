@@ -76,11 +76,12 @@ h3 {
         right: 5vw;
         left: 5vw; } }
 
+.blurb {
+  font-size: 14pt;
+  padding: 2px 90px; }
+
 .kudos.section {
   background-color: rgba(56, 180, 0, 0.4); }
-  .kudos.section .blurb {
-    font-size: 14pt;
-    padding: 2px 90px; }
   .kudos.section .recommendations {
     padding-bottom: 60px;
     display: flex;
