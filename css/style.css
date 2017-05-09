@@ -125,6 +125,9 @@ h3 {
 .portfolio.section {
   background: #000;
   color: #fff; }
+  .portfolio.section .portfolio-item {
+    padding: 5vm;
+    max-width: 820px; }
   .portfolio.section .items {
     display: flex;
     flex-direction: row;
@@ -134,7 +137,7 @@ h3 {
       margin: 30px; }
       .portfolio.section .items .portfolio-item a {
         color: #fff; }
-      .portfolio.section .items .portfolio-item img {
+      .portfolio.section .items .portfolio-item img, .portfolio.section .items .portfolio-item iframe {
         max-height: 50vh;
         margin: 30px; }
 
